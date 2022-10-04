@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Concert One', cursive;
+}
+
+
+
+
+.t1 {
+    width: 34%;
+}
+
+.t2,
+.t3,
+.t4 {
+    width: 22%;
+}
+
+
+
+.right {
+    animation: right 1s;
+    -webkit-animation: right 1s;
+}
+
+@keyframes right {
+    from {
+        opacity: 0;
+        transform: translatex(70%);
+        -webkit-transform: translatex(70%);
+        -moz-transform: translatex(70%);
+        -ms-transform: translatex(70%);
+        -o-transform: translatex(70%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translatex(0%);
+        -webkit-transform: translatex(0%);
+        -moz-transform: translatex(0%);
+        -ms-transform: translatex(0%);
+        -o-transform: translatex(0%);
+    }
+}
+
+.left {
+    animation: left 1s;
+    -webkit-animation: left 1s;
+}
+
+@keyframes left {
+    from {
+        opacity: 0;
+        transform: translatex(-70%);
+        -webkit-transform: translatex(-70%);
+        -moz-transform: translatex(-70%);
+        -ms-transform: translatex(-70%);
+        -o-transform: translatex(-70%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translatex(0%);
+        -webkit-transform: translatex(0%);
+        -moz-transform: translatex(0%);
+        -ms-transform: translatex(0%);
+        -o-transform: translatex(0%);
+    }
+}
+
+
+@media (max-width:992px) {
+    .photo1 {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width:768px) {
+    .fs-6 {
+        font-size: calc(1.275rem + .3vw) !important;
+    }
+}
